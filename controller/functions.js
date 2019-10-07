@@ -29,7 +29,7 @@ function getDate(req, res) {
     date.time = TIME;
     date.dia = dia;
 
-    res.status(200).send({ result: 'La fecha es:', date: date });
+    res.status(200).send({ result: 'La fecha es:', fecha: date });
 }
 
 function getFibonacci(req, res){
@@ -43,7 +43,7 @@ function getFibonacci(req, res){
     b=numeroTemporal+b;
     arrayFibo.push(a);
     }
-    res.status(200).send({ result: 'Serie', fibonacci: arrayFibo });
+    res.status(200).send({ result: 'Serie Fibonacci', serie: arrayFibo });
 }
 
 module.exports = {
